@@ -23,7 +23,7 @@ cloudinary.config({
 conn();
 
 const app = express()
-const port =process.env.PORT
+const port =process.env.PORT || 3000;
 
 
 //ejs templait engine

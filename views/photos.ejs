@@ -16,8 +16,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="titlepage text_align_center">
-            <span>03</span>
-            <h2>Our gallery</h2>
+            <h2>Explore Visions</h2>
           </div>
         </div>
       </div>
@@ -46,8 +45,13 @@
           </div>
          <%}%>
 
-          <div class="col-md-12">
-            <a class="plus_btn" href="gallery.html">+</a>
+         <div class="col-md-12">
+   <% if (user) { %>
+      <a class="plus_btn" href="/users/dashboard">+</a>
+   <% } else { %>
+      <a class="plus_btn" href="/login">+</a>
+   <% } %>
+</div>
           </div>
         </div>
       </div>
